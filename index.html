@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline Coder – Code in 8 languages with no internet</title>
+<meta name="description" content="Offline Coder is a free Windows app with C, C++, Java, Python, JavaScript, HTML, MySQL and MongoDB built in. No internet and no setup.">
+<style>
+  :root{
+    --bg:#0f1b22; --panel:#162a34; --line:#25404d; --text:#f4f6f1; --muted:#a9bac2;
+    --accent:#2fd27a; --accent-ink:#0f1b22;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,Arial,sans-serif;line-height:1.55}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{padding:20px 0;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{font-weight:700;font-size:20px;letter-spacing:.3px}
+  .logo span{color:var(--accent)}
+  .hero{padding:72px 0 48px}
+  .tag{font-family:Consolas,"Courier New",monospace;color:var(--accent);font-size:14px;letter-spacing:2px;text-transform:uppercase}
+  h1{font-size:clamp(40px,8vw,72px);line-height:1.05;margin:12px 0 16px}
+  .lead{font-size:clamp(18px,3vw,24px);color:var(--muted);max-width:640px;margin:0 0 32px}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:20px;padding:16px 32px;border-radius:12px;text-decoration:none}
+  .btn:hover{filter:brightness(1.08)}
+  .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+  .meta{margin-top:14px;color:var(--muted);font-size:15px}
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  h2{font-size:30px;margin:0 0 20px}
+  .chips{display:flex;flex-wrap:wrap;gap:12px}
+  .chip{background:var(--panel);border:1px solid var(--line);padding:10px 20px;border-radius:50px;font-size:18px}
+  .chip.mongo{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:20px;color:var(--accent)}
+  .card p{margin:0;color:var(--muted)}
+  ol{padding-left:22px;margin:0}
+  ol li{margin-bottom:10px}
+  code{font-family:Consolas,"Courier New",monospace;background:var(--panel);padding:2px 8px;border-radius:6px}
+  .note{background:var(--panel);border-left:4px solid var(--accent);padding:16px 20px;border-radius:8px;color:var(--muted)}
+  footer{padding:32px 0 48px;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo">Offline <span>Coder</span></div>
+  <a href="https://github.com/Sadhana080707/offline-coder">GitHub</a>
+</div></header>
+
+<main>
+<div class="wrap">
+  <div class="hero">
+    <div class="tag">Free · For Windows · Works offline</div>
+    <h1>Code in 8 languages.<br>No internet. No setup.</h1>
+    <p class="lead">One installer with the compilers, runtimes and databases built in. Made for college labs and exam halls.</p>
+    <a class="btn" href="https://github.com/Sadhana080707/offline-coder/releases/download/v1.0/OfflineCoder-Setup.exe">Download for Windows</a>
+    <div class="meta">Version 1.0 · about 610 MB · Windows 10 or 11 (64-bit)</div>
+  </div>
+
+  <section>
+    <h2>Eight languages inside</h2>
+    <div class="chips">
+      <span class="chip">C</span><span class="chip">C++</span><span class="chip">Java</span><span class="chip">Python</span>
+      <span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">MySQL</span><span class="chip mongo">MongoDB</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><h3>Nothing to install</h3><p>No compilers, paths or libraries to set up. Install once and start coding.</p></div>
+      <div class="card"><h3>Works with no internet</h3><p>Everything runs on your own PC, so it also works in exam halls.</p></div>
+      <div class="card"><h3>Graphics and charts</h3><p>graphics.h, OpenGL/GLUT, tkinter, turtle and matplotlib windows work.</p></div>
+      <div class="card"><h3>Real databases</h3><p>MySQL and MongoDB start on your laptop when you press Run.</p></div>
+      <div class="card"><h3>Friendly errors</h3><p>Common mistakes are explained in plain English.</p></div>
+      <div class="card"><h3>Clear Run and Stop</h3><p>See when a program is working, running or finished, and stop it any time.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How to install</h2>
+    <ol>
+      <li>Click <b>Download for Windows</b> and wait for the file to finish.</li>
+      <li>Double-click <code>OfflineCoder-Setup.exe</code>.</li>
+      <li>If a blue “Windows protected your PC” box appears, click <b>More info</b>, then <b>Run anyway</b>.</li>
+      <li>Wait for the install to finish. The app opens by itself.</li>
+    </ol>
+    <p class="note" style="margin-top:20px">The app is not code-signed yet, so Windows shows that warning for new apps. It is expected.</p>
+  </section>
+
+  <section>
+    <h2>Good to know</h2>
+    <div class="note">
+      Windows only for now. No debugger yet. Linux-only calls such as <code>fork()</code> are not available.
+      Installing new packages with pip or npm still needs internet.
+    </div>
+  </section>
+</div>
+</main>
+
+<footer><div class="wrap">
+  Offline Coder bundles open-source tools (MinGW GCC, OpenJDK, Python, MySQL, MongoDB and freeglut). Each tool stays under its own license and belongs to its owners.
+</div></footer>
+</body>
+</html>
